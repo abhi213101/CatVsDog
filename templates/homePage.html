@@ -1,0 +1,42 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+
+        <title>CatVsDog</title>
+        <link rel= "stylesheet" type="text/css" href= "{{ url_for('static', filename='styles/homePage.css') }}">
+        <script src="{{ url_for('static', filename='homePage.js') }}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container" id="heading">
+            <h2>Choose Image</h2>
+        </div>
+
+        <div class="container">           
+            
+            <form action = "/predict" method = "POST" enctype = "multipart/form-data">
+                
+                <div class="container">
+                    <div id="img" class="container btn btn-grad" onclick="getFile()">Click to upload an image</div>
+                    <input type='file' name="file" onchange="readURL(this, this);"  id="profile-image" style='height: 0px;width: 0px; overflow:hidden;'/>
+                </div>
+
+                <div class="container">
+                    <img id="blah" src="https://static.vecteezy.com/system/resources/previews/000/421/494/non_2x/upload-icon-vector-illustration.jpg" alt="your image" />
+                </div>
+
+                <div class="container">
+                    <input class="container btn btn-grad" type = "submit" id="submit" />
+                </div>
+
+            </form>
+            
+        </div>
+
+    </body>
+
+    
+</html>

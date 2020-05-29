@@ -1,0 +1,38 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>CatVsDog</title>
+        <link rel= "stylesheet" type="text/css" href= "{{ url_for('static', filename='styles/homePage.css') }}">
+    </head>
+
+    <body>
+
+        <div class="container" id="heading">
+            <h2>It's a {{animal}}</h2>
+        </div>
+
+        <div class="container">
+
+            <div class="container">
+                <img src= {{src}} >
+            </div>
+
+            <div class="container" style="color: white;">
+                <h2 style="color: white;">Accuracy :  {{percentage}}</h2>
+                <h6 style="color: white;"><sup>*</sup>Answer may not be correct..!</h6>
+            </div>
+
+            <div class="container">
+
+                <form action="/" method="GET">
+                    <button class="btn btn-grad" >Try - Again</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </body>
+
+    
+</html>

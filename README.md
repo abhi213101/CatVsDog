@@ -7,10 +7,15 @@ Deep Learning API to predict whether the image is cat or dog. Created using Flas
 
 
 # File description
-"CatVsDog.h5" is a trained Deep Learning Model
-"templates" contains html templates
-"static" contains all css and js files
-"app.py" is a Flask API
+==> "CatVsDog.h5" is a trained Deep Learning Model
+
+==> "templates" contains html templates
+
+==> "static" contains all css and js files
+
+==> "app.py" is a Flask API
+
+==> "images" contains images uploaded by users for prediction
 
 
 

@@ -7,7 +7,7 @@ Deep Learning API to predict whether the image is cat or dog. Created using Flas
 
 
 # File description
-==> "CatVsDog.h5" is a trained Deep Learning Model
+==> "CatVsDog.h" is a trained Deep Learning Model
 
 ==> "templates" contains html templates
 

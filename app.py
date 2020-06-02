@@ -5,7 +5,7 @@ from tensorflow.keras.models import load_model
 import os
 from werkzeug.utils import secure_filename
 
-Model = load_model("./CatVsDog.h5")
+Model = load_model("./CatVsDog.h")
 
 #init flask app
 
